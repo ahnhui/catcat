@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DESIGN CHEONG CHUN</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    .logo{
+        font-size: 32px;
+        font-weight: bolder;
+        margin-bottom: 24px;
+        line-height: 1.5;
+    }
+    nav{
+        font-size: 18px;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff;
+      color: #111;
+      font-size: 1rem; 
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    .container {
+      display: flex;
+    }
+    aside {
+      width: 180px;
+      padding: 40px 24px;
+      font-size: 0.875rem; 
+      line-height: 2;
+      text-align: left;
+    }
+    aside h1 {
+      font-size: 1rem;
+      font-weight: bold;
+      margin-bottom: 24px;
+    }
+    main {
+      flex-grow: 1;
+      padding: 40px 24px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+    }
+    .grid img {
+      width: 100%;
+      display: block;
+    }
+    footer {
+      font-size: 0.875rem; 
+      padding: 48px 24px;
+      text-align: left;
+    }
+    .footer-note {
+      color: #888;
+      margin-top: 4px;
+      font-size: 0.8125rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <aside>
+    <div class="logo">DESIGN CHEONG CHUN</div>
+      
+      <nav>
+        <a href="#">ABOUT ME</a><br>
+        <a href="#">PROJECT</a><br>
+        <a href="#">EXHIBITION</a><br>
+        <a href="#">POP-UP</a>
+      </nav>
+    </aside>
+
+    <main>
+      <div class="grid">
+        <!-- 이미지 리스트: 실제 경로로 대체하세요 -->
+        <img src="img/p2.png" alt="img2">
+        <img src="img/p3.png" alt="img3">
+        <img src="img/p4.png" alt="img4">
+        <img src="img/p6.png" alt="img6">
+        <img src="img/p2.png" alt="img2">
+        <img src="img/p3.png" alt="img3">
+        <img src="img/p4.png" alt="img4">
+        <img src="img/p6.png" alt="img6">
+        <img src="img/p2.png" alt="img2">
+        <img src="img/p3.png" alt="img3">
+        <img src="img/p4.png" alt="img4">
+        <img src="img/p6.png" alt="img6">
+        <img src="img/p2.png" alt="img2">
+        <img src="img/p3.png" alt="img3">
+        <img src="img/p4.png" alt="img4">
+        <img src="img/p6.png" alt="img6">
+        <!-- 필요에 따라 더 추가 -->
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    <p>ⓒDESIGN CHEONG CHUN</p>
+    <p class="footer-note">User: Nam Chun Cheol / T.010.0000.0000 / designcc@naver.com</p>
+  </footer>
+</body>
+</html>
