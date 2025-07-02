@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ABOUT ME</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      background-color: #fff;
+      color: #111;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: #368d36;
+      font-weight: 600;
+    }
+
+    header {
+      padding: 24px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .logo {
+      font-size: 40px;
+      font-weight: 700;
+      color: #1f2e1e;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 48px 24px;
+    }
+
+    .profile-container {
+      display: flex;
+      align-items: flex-start;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .profile-img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-color: #ddd;
+      background-image: url('img/profile.jpg'); /* 실제 이미지로 교체 */
+      background-size: cover;
+      background-position: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      flex-shrink: 0;
+    }
+
+    .profile-info {
+      flex: 1;
+      min-width: 260px;
+    }
+
+    .profile-info h2 {
+      font-size: 28px;
+      margin-bottom: 12px;
+      color: #1f2e1e;
+    }
+
+    .profile-info p {
+      margin-bottom: 16px;
+    }
+
+    .profile-info strong {
+      color: #1f2e1e;
+    }
+
+    .quote {
+      font-style: italic;
+      color: #666;
+      margin-top: 16px;
+    }
+
+    .contact {
+      font-size: 0.95rem;
+      color: #555;
+      margin-top: 16px;
+      margin-bottom: 24px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #368d36;
+      color: #fff;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      transition: background-color 0.2s;
+    }
+
+    .btn:hover {
+      background-color: #2e7630;
+    }
+
+    footer {
+      margin-top: 64px;
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 0.875rem;
+      color: #888;
+      border-top: 1px solid #eee;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Product Designer AHN</div>
+  </header>
+
+  <main>
+    <div class="profile-container">
+      <div class="profile-img"></div>
+      <div class="profile-info">
+        <h2>칠영 (chill0)</h2>
+        <p>
+          제품과 사람 사이의 경험을 디자인합니다.  
+          모든 내용은 임시로 적은 내용입니다., 사용자가 직관적으로 이해하고 신뢰할 수 있는 디자인을 만듭니다.
+        </p>
+
+        <p><strong>🎓 학력</strong><br>
+          오즈코딩대학교 산업디자인학과 졸업 (2019)
+        </p>
+
+        <p><strong>💼 경력</strong><br>
+          오즈코딩 4기 디자인 인턴 (2023)<br>
+          개인 디자인 브랜드 "오즈코딩디자인" 운영 (2021~)
+        </p>
+
+        <p><strong>🛠 사용 툴</strong><br>
+          Figma, Adobe XD, Photoshop, Rhino, KeyShot, HTML/CSS
+        </p>
+
+        <p class="quote">
+          "기능과 감성의 균형, 그 사이를 설계합니다."
+        </p>
+
+        <div class="contact">
+          ✉️ designcc@nar.com<br>
+          📱 010-0000-0000
+        </div>
+
+        <a class="btn" href="project.html">포트폴리오 보러가기 →</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    ⓒ Product Designer AHN
+  </footer>
+</body>
+</html>

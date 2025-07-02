@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PROJECT</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      background-color: #fff;
+      color: #111;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: #368d36;
+      font-weight: 600;
+    }
+
+    header {
+      padding: 24px 48px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .logo {
+      font-size: 40px;
+      font-weight: 700;
+      color: #1f2e1e;
+    }
+
+    main {
+      margin: 0;
+      padding: 48px 48px;
+    }
+
+    .project-container {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    .project-list ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .project-list li {
+      position: relative;
+      margin-bottom: 24px;
+      font-size: 1.05rem;
+      padding: 6px 8px;
+      transition: all 0.25s ease;
+      cursor: pointer;
+      text-align: left;
+      border-left: 4px solid transparent;
+      max-width: 700px;
+    }
+
+    .project-list li:hover {
+      color: #368d36;
+      background-color: #f1f7f1;
+      border-left: 4px solid #368d36;
+    }
+
+    .preview-img {
+      position: absolute;
+      top: 0;
+      left: calc(100% + 32px);
+      width: 720px;
+      height: 540px;
+      background-color: #f3f3f3;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      background-size: cover;
+      background-position: center;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out, transform 0.3s ease;
+      pointer-events: none;
+      z-index: 10;
+    }
+
+    .preview-img.active {
+      opacity: 1;
+      transform: scale(1.02);
+    }
+
+    footer {
+      margin-top: 64px;
+      padding: 32px 48px;
+      font-size: 0.875rem;
+      color: #888;
+      border-top: 1px solid #eee;
+    }
+
+    @media (max-width: 768px) {
+      .preview-img {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Product Designer AHN</div>
+  </header>
+
+  <main>
+    <div class="project-container">
+      <div class="project-list">
+        <ul>
+          <li onmouseover="showImage(this, 'img/project1.jpg')" onmouseout="hideImage(this)">
+            01. Healthcare App Redesign (2023)
+            <div class="preview-img"></div>
+          </li>
+          <li onmouseover="showImage(this, 'img/project2.jpg')" onmouseout="hideImage(this)">
+            02. IoT Smart Lighting UI (2023)
+            <div class="preview-img"></div>
+          </li>
+          <li onmouseover="showImage(this, 'img/project3.jpg')" onmouseout="hideImage(this)">
+            03. Dental Comparison Service UX (2024)
+            <div class="preview-img"></div>
+          </li>
+          <li onmouseover="showImage(this, 'img/project4.jpg')" onmouseout="hideImage(this)">
+            04. Web Design Certificate Project (2024)
+            <div class="preview-img"></div>
+          </li>
+          <li onmouseover="showImage(this, 'img/project5.jpg')" onmouseout="hideImage(this)">
+            05. Cheongchun Brand Identity (2022)
+            <div class="preview-img"></div>
+          </li>
+          <li onmouseover="showImage(this, 'img/project6.jpg')" onmouseout="hideImage(this)">
+            06. Pet Care App Concept (2024)
+            <div class="preview-img"></div>
+          </li>
+          <li onmouseover="showImage(this, 'img/project7.jpg')" onmouseout="hideImage(this)">
+            07. Weather Forecast UI Widget (2023)
+            <div class="preview-img"></div>
+          </li>
+          <li onmouseover="showImage(this, 'img/project8.jpg')" onmouseout="hideImage(this)">
+            08. Personal Finance Dashboard (2024)
+            <div class="preview-img"></div>
+          </li>
+          <li onmouseover="showImage(this, 'img/project9.jpg')" onmouseout="hideImage(this)">
+            09. Travel Planner Mobile App (2023)
+            <div class="preview-img"></div>
+          </li>
+          <li onmouseover="showImage(this, 'img/project10.jpg')" onmouseout="hideImage(this)">
+            10. Portfolio Website UI (2024)
+            <div class="preview-img"></div>
+          </li>
+          <li onmouseover="showImage(this, 'img/project11.jpg')" onmouseout="hideImage(this)">
+            11. Furniture AR Shopping UI (2023)
+            <div class="preview-img"></div>
+          </li>
+          <li onmouseover="showImage(this, 'img/project12.jpg')" onmouseout="hideImage(this)">
+            12. Eco Market Brand Design (2022)
+            <div class="preview-img"></div>
+          </li>
+          <li onmouseover="showImage(this, 'img/project13.jpg')" onmouseout="hideImage(this)">
+            13. Public Service UX Hackathon (2024)
+            <div class="preview-img"></div>
+          </li>
+          <li onmouseover="showImage(this, 'img/project14.jpg')" onmouseout="hideImage(this)">
+            14. Minimal Clock App UI (2023)
+            <div class="preview-img"></div>
+          </li>
+          <li onmouseover="showImage(this, 'img/project15.jpg')" onmouseout="hideImage(this)">
+            15. AI Assistant Interface (2024)
+            <div class="preview-img"></div>
+          </li>
+          <li onmouseover="showImage(this, 'img/project16.jpg')" onmouseout="hideImage(this)">
+            16. Smart Mirror Dashboard (2023)
+            <div class="preview-img"></div>
+          </li>
+          <li onmouseover="showImage(this, 'img/project17.jpg')" onmouseout="hideImage(this)">
+            17. Design Research Report (2022)
+            <div class="preview-img"></div>
+          </li>
+          <li onmouseover="showImage(this, 'img/project18.jpg')" onmouseout="hideImage(this)">
+            18. Typography System for Airline App (2024)
+            <div class="preview-img"></div>
+          </li>
+          <li onmouseover="showImage(this, 'img/project19.jpg')" onmouseout="hideImage(this)">
+            19. Online Education Platform UI (2023)
+            <div class="preview-img"></div>
+          </li>
+          <li onmouseover="showImage(this, 'img/project20.jpg')" onmouseout="hideImage(this)">
+            20. Motion Graphic Micro-interaction (2022)
+            <div class="preview-img"></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <p style="margin-top: 40px;"><a href="index.html">← Back to Main</a></p>
+  </main>
+
+  <footer>
+    ⓒ DESIGN CHEONG CHUN
+  </footer>
+
+  <script>
+    function showImage(liElement, imgPath) {
+      const preview = liElement.querySelector('.preview-img');
+      preview.style.backgroundImage = `url('${imgPath}')`;
+      preview.classList.add('active');
+    }
+
+    function hideImage(liElement) {
+      const preview = liElement.querySelector('.preview-img');
+      preview.classList.remove('active');
+    }
+  </script>
+</body>
+</html>
